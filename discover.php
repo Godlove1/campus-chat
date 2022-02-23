@@ -1,4 +1,4 @@
-
+<!---important links required on the page-->
 <?php include 'scripts/dbconn.php';?>
 <?php include 'includes/links.php';?>
 <?php include 'scripts/follow.php';?>
@@ -14,7 +14,9 @@
 			<input type="search" name="search" id="search" placeholder="Search">
 			<input type="submit" value="Search" name="sbtn">
 		</div>
+		<!--load all user of the platform linked from parts folder-->
 <?php include 'parts/allusers.php';?>
+		<!--load all user of the platform linked from parts folder-->
 	</div>
 
 <!--navigation bar-->
