@@ -3,7 +3,7 @@
 <?php include 'scripts/updatebio.php';?>
 <?php include 'scripts/eventupload.php';?>
 
-<!--profile navbar-->
+<!-- individual profile navbar-->
 <div class="navbar">
 	<div class="username">
 		<p><a href="profile.php?id=<?php echo $ID;?>" class="active"><?php echo $username; ?></a></p>
@@ -11,6 +11,7 @@
 	<div class="posts nav">
 		<a href="profilepost.php?id=<?php echo $ID;?>">Posts</a>
 	
+		<!--query to retrive an individuals profile-->
 			<?php
  $cquery = mysqli_query($conn,"SELECT COUNT(user_id) as userposts FROM posts WHERE user_id='".$ID."'");
       $result = mysqli_fetch_assoc($cquery);
